@@ -55,6 +55,11 @@ public class Knjiga {
 		Knjiga other = (Knjiga) obj;
 		return Objects.equals(isbn, other.isbn);
 	}
+	@Override
+	public String toString() {
+		return "Knjiga [naslov=" + naslov + ", autori=" + autori + ", isbn=" + isbn + ", izdavac=" + izdavac
+				+ ", izdanje=" + izdanje + "]";
+	}
 	
 	
 }
